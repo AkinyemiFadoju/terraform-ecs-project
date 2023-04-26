@@ -55,3 +55,24 @@ variable "ssh_location" {
   description = "IP address that can SSH into the server"
   type = string
 }
+
+#database snapshot variable
+variable "database_snapshot_identifier" {
+  description = "database snapshot name"
+  type = string
+}
+
+variable "database_instance_class" {
+  description = "database instance type"
+  type = string
+}
+
+variable "database_instance_identifier" {
+  description = "database instance identifier"
+  type = string
+}
+
+variable "multi_az_deployment" {
+  description = "create a standby DB instance"
+  type = bool
+}

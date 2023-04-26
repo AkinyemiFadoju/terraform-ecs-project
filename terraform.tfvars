@@ -16,3 +16,9 @@ private_data_subnet_az2_cidr = "10.0.5.0/24"
 
 #security group variable
 ssh_location = "216.197.247.251/32"
+
+#rds variables
+database_snapshot_identifier="dev-rds-db-snapshot"
+database_instance_class="db.t2.micro"
+database_instance_identifier="dev-rds-db"
+multi_az_deployment="false"
