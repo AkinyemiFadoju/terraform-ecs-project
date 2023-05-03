@@ -76,3 +76,42 @@ variable "multi_az_deployment" {
   description = "create a standby DB instance"
   type = bool
 }
+
+#acm variables
+variable "domain_name" {
+  description = "Domain name"
+  type = string
+}
+
+variable "alternative_name" {
+  description = "Sub-domain name"
+  type = string
+}
+
+#s3 variables
+variable "env_file_bucket_name" {
+  description = "s3 bucket name"
+  type = string
+}
+
+variable "env_file_name" {
+  description = "Env file name"
+  type = string
+}
+
+#ecs variable
+variable "architecture" {
+  description = "ecs cpu architecture"
+  type = string
+}
+
+variable "container_image" {
+  description = "container image uri"
+  type = string
+}
+
+#route 53 variables
+variable "record_name" {
+  description = "sub domain name"
+  type = string
+}

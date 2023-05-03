@@ -22,3 +22,18 @@ database_snapshot_identifier="dev-rds-db-snapshot"
 database_instance_class="db.t2.micro"
 database_instance_identifier="dev-rds-db"
 multi_az_deployment="false"
+
+#acm variables
+domain_name = "akinyemifadoju.link"
+alternative_name = "*.akinyemifadoju.link" #The "*." is how we request ssl certificate for alternative/subdomain name
+
+#s3 variables
+env_file_bucket_name = "af-ecs-env-file-bucket"
+env_file_name = "rentzone.env"
+
+#ecs variable
+architecture = "ARM64" #ARM64 because Docker image was created on Mac; for Windows it will be "X64_64"
+container_image = "926522733342.dkr.ecr.us-east-1.amazonaws.com/rentzone:latest"
+
+#route 53 variable
+record_name = "www"
